@@ -11,6 +11,8 @@ func BasicUser() {
 		Username: "Ewong",
 		IsActive: true,
 		Password: []byte("anjayani"),
+		Gender:   basic.Gender_GENDER_FEMALE,
+		Emails:   []string{"a@a.com"},
 	}
 	log.Println(&scalar)
 
