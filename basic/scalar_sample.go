@@ -15,6 +15,11 @@ func BasicUser() {
 		Password: []byte("anjayani"),
 		Gender:   basic.Gender_GENDER_FEMALE,
 		Emails:   []string{"chilli@example.com"},
+		Address: &basic.Address{
+			Street:  "Jl.Mawar",
+			City:    "Tulungagung",
+			Country: "Jawa Timur",
+		},
 	}
 
 	jsonBytes, _ := protojson.Marshal(&u)
