@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package first.app;
+
+option go_package = "protobuf-go/protogen/application/job";
+
+message Application {
+  string name = 1;
+  string position = 2;
+}

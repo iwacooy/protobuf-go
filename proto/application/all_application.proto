@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+import "proto/application/job/job_application.proto";
+import "proto/application/software/software_application.proto";
+
+option go_package = "protobuf-go/protogen/application/jobsearch";
+
+
+message JobCandidate {
+  uint32 job_candidate_id = 1 [json_name = "job_candidate_id"];
+  first.app.Application application = 2;
+}
+
+message JobSoftware {
+  double software_version_id = 1 [json_name = "software_version_id"];
+  second.app.Application application = 2;
+}

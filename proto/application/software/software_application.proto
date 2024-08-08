@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package second.app;
+
+option go_package = "protobuf-go/protogen/application/software";
+
+message Application {
+  string name = 1;
+  uint32 download = 2;
+  repeated string platforms = 3;
+
+}
